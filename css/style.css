@@ -42,30 +42,7 @@ body {
   color: #f5f5f5
 }
 
-.icon-star:before {
-  content: "";
-  position: absolute;
-  background: url("../img/star-icon.png") no-repeat 0 0;
-  width: 17px;
-  height: 16px;
-  left: 0;
-}
-
-.icon-support:before {
-  background: url("../img/support-icon.png") no-repeat 0 0;
-}
-
-.icon-send:before {
-  background: url("../img/send_it_now-icon.png") no-repeat 0 0;
-}
-
-.icon-pencil:before {
-  background: url("../img/very_nice_to_see-icon.png") no-repeat 0 0;
-}
-
-.icon-support:before,
-.icon-send:before,
-.icon-pencil:before {
+.icon::before {
   content: "";
   position: absolute;
   left: 0;
@@ -73,15 +50,33 @@ body {
   height: 24px;
 }
 
-.section-padding {
+.icon--star::before {
+  background: url("../img/star-icon.png") no-repeat 0 0;
+  width: 17px;
+  height: 16px;
+}
+
+.icon--support::before {
+  background: url("../img/support-icon.png") no-repeat 0 0;
+}
+
+.icon--send::before {
+  background: url("../img/send_it_now-icon.png") no-repeat 0 0;
+}
+
+.icon--pencil::before {
+  background: url("../img/very_nice_to_see-icon.png") no-repeat 0 0;
+}
+
+.section {
   padding: 70px 0;
 }
 
-.bg-color--grey {
+.section--grey {
   background: #eaeaeb;
 }
 
-.bg-color--green {
+.section--green {
   background: #50c3af;
 }
 
@@ -148,7 +143,7 @@ body {
     padding: 0 0 23px 40px;
   }
 
-  .card__title--padding:after {
+  .card__title--padding::after {
     left: 0;
   }
 }
