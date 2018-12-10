@@ -179,6 +179,7 @@ body {
   .card__content {
     flex-direction: column;
     align-items: flex-start;
+    padding: 0;
   }
 
   .card__title {
@@ -457,7 +458,7 @@ body {
 }
 
 .sponsors-list__item {
-  margin: 0 0 8vh 0;
+  margin: 0 0 40px 0;
 }
 
 @media all and (min-width: 480px) {
@@ -508,8 +509,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 60px;
-  justify-content: space-between;
+  height: 100px;
+  justify-content: space-around;
 }
 
 .footer__copyright {
@@ -528,11 +529,11 @@ body {
 }
 
 .footer__social-links {
-  padding: 20px 0 0 0;
   list-style: none;
   width: 75px;
   display: flex;
   justify-content: space-between;
+  padding: 0 0 20px 0;
 }
 
 @media all and (min-width: 768px) {
@@ -540,6 +541,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 60px;
   }
 
   .footer__copyright,
